@@ -17,7 +17,8 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
-      revision: v0.1+mouse
+      remote: zmkfirmware
+      revision: v0.3
       import: app/west.yml
     - name: zmk-adaptive-key
       path: modules/zmk/adaptive-key
@@ -26,7 +27,7 @@ manifest:
     - name: zmk-helpers
       path: modules/zmk/helpers
     - name: zmk-leader-key
-      revision: v0.1+locality
+      revision: v0.3
       path: modules/zmk/leader-key
     - name: zmk-tri-state
       path: moudles/zmk/tri-state
