@@ -1,5 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#import "6column.dtsi"
+#import "corne.dtsi"
+
+&foostan_corne_6col_layout {
+  transform = <&default_transform>;
+};
 
 &physical_layout0 {
   transform = <&default_transform>;
