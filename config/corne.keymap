@@ -35,23 +35,24 @@ ZMK_HOLD_TAP(hmr,
     hold-trigger-on-release;
 )
 
-ZMK_HOLD_TAP(lt_tab,
+ZMK_BEHAVIOR(lt_tab, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     require-prior-idle-ms = <150>;
-    bindings = <&kp>;
+    bindings = <&mo>, <&kp>;
     hold-trigger-on-release;
 )
 
-ZMK_HOLD_TAP(lt_back,
+ZMK_BEHAVIOR(lt_back, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     require-prior-idle-ms = <150>;
-    bindings = <&kp>;
+    bindings = <&mo>, <&kp>;
     hold-trigger-on-release;
 )
+
 
 ZMK_CONDITIONAL_LAYER(ext, NUM SYM, EXT) // FN + NUM --> SYS.
 
@@ -59,7 +60,7 @@ ZMK_LAYER(def,
 		&kp LGUI	&kp Q           &kp W       &kp E        &kp R        &kp T           &kp Y       &kp U         &kp I         &kp O       &kp P           &kp DEL
 		&kp LCTRL	&hml LGUI A     &hml LALT S &hml LSHFT D &hml LCTRL F &kp G           &kp H       &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L &hmr LGUI SEMI  &kp APOS
     &kp LSHFT &kp Z           &kp X       &kp C        &kp V        &kp B           &kp N       &kp M         &kp COMMA     &kp DOT     &kp FSLH        &kp RSHFT
-      							                      &kp ESC      &lt_tab 1 TAB &kp SPACE      &kp RET     &lt_tab 2 BSPC &kp LALT
+      							                      &kp ESC      &lt_tab 1 TAB &kp SPACE      &kp RET     &lt_back 2 BSPC &kp LALT
 )
 
 ZMK_LAYER(num,
