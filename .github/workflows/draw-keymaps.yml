@@ -4,10 +4,10 @@ on:
   workflow_dispatch:  # can be triggered manually
   push:               # automatically run on changes to following paths
     paths:
-      - "config/*.keymap"
-      - "config/*.dtsi"
+      - "config/corne.keymap"
+      - "config/urchin.keymap"
+      - "boards/shields/*/*.dtsi"
       - "keymap_drawer.config.yaml"
-      - 'boards/*/*/*.keymap'
 
 jobs:
   draw:
