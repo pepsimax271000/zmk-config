@@ -1,4 +1,4 @@
-if SHIELD_CHIPPER_LEFT
+if SHIELD_CHIPPER_RIGHT
 
 config ZMK_KEYBOARD_NAME
 	default "Chipper"
@@ -8,7 +8,7 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 
 endif
 
-if SHIELD_CHIPPER_RIGHT
+if SHIELD_CHIPPER_LEFT
 
 config ZMK_KEYBOARD_NAME
 	default "Chipper Right"
