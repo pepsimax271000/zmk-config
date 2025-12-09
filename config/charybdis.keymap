@@ -16,7 +16,6 @@
 #define EXT 3
 #define GAME 4
 
-/{ chosen { zmk,physical-layout = &5_column_transform; }; };
 
 /* left-hand HRMs */
 ZMK_HOLD_TAP(hml,
@@ -90,8 +89,10 @@ ZMK_LAYER(sym,
 )
 
 ZMK_LAYER(ext,
-    &bootloader &trans &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &bootloader     &bootloader
-    &trans      &trans          &trans      &trans     &trans           &trans         &tog 1      &tog 2           &tog 3        &tog 4        &trans          &trans
-    &trans      &trans          &trans      &trans     &trans           &trans         &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5    &trans
+    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &bootloader
+    &trans          &trans      &trans     &trans           &trans         &tog 1      &tog 2           &tog 3        &tog 4        &trans
+    &trans          &trans      &trans     &trans           &trans         &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5
                                             &trans     &trans           &trans         &trans       &trans          &trans
 )
+
+/{ chosen { zmk,physical-layout = &foostan_corne_5col_layout; }; };
