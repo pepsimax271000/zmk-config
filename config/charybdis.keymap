@@ -95,4 +95,3 @@ ZMK_LAYER(ext,
                                             &trans     &trans           &trans         &trans       &trans          &trans
 )
 
-/{ chosen { zmk,physical-layout = &5_column_transform; }; };
