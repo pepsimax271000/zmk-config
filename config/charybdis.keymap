@@ -95,4 +95,4 @@ ZMK_LAYER(ext,
                                             &trans     &trans           &trans         &trans       &trans          &trans
 )
 
-/{ chosen { zmk,physical-layout = &foostan_corne_5col_layout; }; };
+/{ chosen { zmk,physical-layout = &5_column_transform; }; };
