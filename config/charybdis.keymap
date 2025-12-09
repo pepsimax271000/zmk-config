@@ -16,6 +16,7 @@
 #define EXT 3
 #define GAME 4
 
+/{ chosen { zmk,physical-layout = &5_column_transform; }; };
 
 /* left-hand HRMs */
 ZMK_HOLD_TAP(hml,
