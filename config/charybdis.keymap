@@ -15,7 +15,7 @@
 #define SYM 2
 #define EXT 3
 #define GAME 4
-
+#define MOUSE 5
 
 /* left-hand HRMs */
 ZMK_HOLD_TAP(hml,
@@ -94,4 +94,11 @@ ZMK_LAYER(ext,
     &trans          &trans      &trans     &trans           &trans         &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5
                                             &trans     &trans           &trans         &trans       &trans          &trans
 )
+
+ZMK_LAYER(mouse,
+    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
+    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
+    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
+                                           &mkp LCLK &mkp MCLK &mkp  RCLK &trans       &trans          
+  )
 
