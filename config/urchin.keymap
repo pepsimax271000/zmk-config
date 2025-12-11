@@ -66,7 +66,7 @@ ZMK_BEHAVIOR(lt_shift, hold_tap,
 ZMK_COMBO(caps, &kp CAPSLOCK, LM2 RM2)
 ZMK_COMBO(esc , &kp ESC     , LH1 LH0)
 
-ZMK_CONDITIONAL_LAYER(ext, 1 2, 3) // FN + NUM --> SYS.
+ZMK_CONDITIONAL_LAYER(ext, NUM SYM, EXT) // FN + NUM --> SYS.
 
 ZMK_LAYER(def,
 		&kp Q           &kp W       &kp E        &kp R          &kp T           &kp Y       &kp U            &kp I         &kp O       &kp P         
