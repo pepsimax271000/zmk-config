@@ -100,5 +100,5 @@ ZMK_LAYER(mouse,
     &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
     &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
                                            &mkp LCLK &mkp MCLK &mkp  RCLK &trans       &trans          
-  )
+)
 
