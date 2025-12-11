@@ -11,6 +11,8 @@
 #define INPUT_REL_HWHEEL 0x06           /**< Relative horizontal wheel coordinate */
 #define INPUT_REL_MISC 0x09             /**< Relative misc coordinate */
 
+#include <input/processors.dtsi>
+
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -48,7 +50,6 @@
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        automouse-layer = <5>;
     };
 };
 
@@ -56,6 +57,12 @@
     trackball_listener {
       compatible = "zmk,input-listener";
       device = <&trackball>;
+      input-processors = <&zip_temp_layer 5 400>;
+    };
+    
+    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+      compatible = "zmk,input-processor-temp-layer";
+      require-prior-idle-ms = <500>;
     };
 };
 
