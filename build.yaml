@@ -47,10 +47,12 @@ include:
 
   - board: seeeduino_xiao_ble 
     shield: chipper_left nice_view_adapter nice_epaper
+    snippet: studio-rpc-usb-uart zmk-usb-logging
     artifact-name: corne-choc_left
 
   - board: seeeduino_xiao_ble
     shield: chipper_right nice_view_adapter nice_epaper
+    snippet: studio-rpc-usb-uart zmk-usb-logging
     artifact-name: corne-choc_right
 
   - board: nice_nano_v2
