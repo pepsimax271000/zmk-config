@@ -11,6 +11,8 @@
 #define INPUT_REL_HWHEEL 0x06           /**< Relative horizontal wheel coordinate */
 #define INPUT_REL_MISC 0x09             /**< Relative misc coordinate */
 
+#include <input/processors.dtsi>
+
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -31,7 +33,7 @@
 };
 
 &spi0 {
-    status = "disabled";
+    status = "okay";
     compatible = "nordic,nrf-spim";
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
@@ -39,18 +41,17 @@
     cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;
 
     trackball: trackball@0 {
-        status = "disabled";
+        status = "okay";
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <3200>;
+        cpi = <400>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
     };
 };
-
 / {
     trackball_listener {
       compatible = "zmk,input-listener";
@@ -63,3 +64,20 @@
       require-prior-idle-ms = <500>;
     };
 };
+
+<<<<<<< HEAD
+/ {
+    trackball_listener {
+      compatible = "zmk,input-listener";
+      device = <&trackball>;
+      input-processors = <&zip_temp_layer 5 400>;
+    };
+    
+    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+      compatible = "zmk,input-processor-temp-layer";
+      require-prior-idle-ms = <500>;
+    };
+};
+=======
+
+>>>>>>> parent of 9cc4ff5 (update names)
