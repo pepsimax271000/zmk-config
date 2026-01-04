@@ -17,6 +17,8 @@
 #define EXT 3
 #define GAME 4
 #define MOU 5
+#define SCR 6
+#define SNI 7
 
 /* left-hand HRMs */
 ZMK_HOLD_TAP(hml,
@@ -64,7 +66,26 @@ ZMK_BEHAVIOR(lt_shift, hold_tap,
     hold-trigger-on-release;
 )
 
+ZMK_BEHAVIOR(lt_scr, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <120>;
+    quick-tap-ms = <150>;
+    require-prior-idle-ms = <80>;
+    bindings = <&mo>, <&kp>;
+    hold-trigger-on-release;
+)
+
+ZMK_BEHAVIOR(lt_mb3, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <120>;
+    quick-tap-ms = <150>;
+    require-prior-idle-ms = <80>;
+    bindings = <&mo>, <&kp>;
+    hold-trigger-on-release;
+)
+
 ZMK_COMBO(caps, &kp CAPSLOCK, LM2 RM2)
+ZMK_COMBO(sni, &mo 7, RB2 RB3)
 
 ZMK_CONDITIONAL_LAYER(ext, NUM SYM, EXT) // FN + NUM --> SYS.
 
@@ -72,7 +93,7 @@ ZMK_LAYER(def,
 		&kp Q           &kp W       &kp E        &kp R          &kp T           &kp Y       &kp U            &kp I         &kp O       &kp P         
 		&hml LGUI A     &hml LALT S &hml LSHFT D &hml LCTRL F   &kp G           &kp H       &hmr LCTRL J     &hmr RSHFT K  &hmr LALT L &hmr LGUI SEMI
     &kp Z           &kp X       &kp C        &kp V          &kp B           &kp N       &kp M            &kp COMMA     &kp DOT     &kp FSLH
-      				  			          &kp ESC      &lt_tab 1 TAB  &lt_shift LSHFT SPACE       &kp RET     &lt_back 2 BSPC
+      				  			          &lt_tab 1 TAB  &lt_shift LSHFT SPACE &lt_scr 6 ESC    &kp RET     &lt_back 2 BSPC
 )
 
 ZMK_LAYER(num,  
@@ -97,6 +118,20 @@ ZMK_LAYER(ext,
 )
 
 ZMK_LAYER(mou,
+    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
+    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
+    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &mkp MB1
+                                &mkp MB1   &lt_mb3 6 MB3 &mkp MB2       &trans       &trans
+)
+
+ZMK_LAYER(scr,
+    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
+    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
+    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
+                                &mkp MB1   &mkp MB3         &mkp MB2       &trans       &trans
+)
+
+ZMK_LAYER(sni,
     &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
     &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
     &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
