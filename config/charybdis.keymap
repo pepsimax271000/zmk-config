@@ -16,8 +16,6 @@
 #define SYM 2
 #define EXT 4
 #define MOU 5
-#define SCR 6
-#define SNI 7
 
 /* left-hand HRMs */
 ZMK_HOLD_TAP(hml,
@@ -65,24 +63,6 @@ ZMK_BEHAVIOR(lt_shift, hold_tap,
     hold-trigger-on-release;
 )
 
-ZMK_BEHAVIOR(lt_scr, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <120>;
-    quick-tap-ms = <150>;
-    require-prior-idle-ms = <80>;
-    bindings = <&mo>, <&kp>;
-    hold-trigger-on-release;
-)
-
-ZMK_BEHAVIOR(lt_mb3, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <120>;
-    quick-tap-ms = <150>;
-    require-prior-idle-ms = <80>;
-    bindings = <&mo>, <&kp>;
-    hold-trigger-on-release;
-)
-
 ZMK_COMBO(caps, &kp CAPSLOCK, LM2 RM2)
 
 ZMK_CONDITIONAL_LAYER(ext, NUM SYM, EXT) // FN + NUM --> SYS.
@@ -117,21 +97,7 @@ ZMK_LAYER(ext,
 
 ZMK_LAYER(mou,
     &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
-    &mo 6           &mo 7       &trans     &trans           &trans         &trans      &trans           &trans        &mo 7         &mo 6
+    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
     &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &mkp MB1
-                                &mkp MB1   &mkp MB3         &mkp MB2       &trans       &trans
-)
-
-ZMK_LAYER(scr,
-    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
-    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
-    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
-                                &trans     &trans           &trans         &trans      &trans
-)
-
-ZMK_LAYER(sni,
-    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
-    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
-    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
-                                &trans     &trans           &trans         &trans      &trans
+                                &mkp MB1   &mkp MB3         &mkp MB2       &trans      &trans
 )
