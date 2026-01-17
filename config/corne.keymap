@@ -63,6 +63,15 @@ ZMK_BEHAVIOR(lt_shift, hold_tap,
     hold-trigger-on-release;
 )
 
+ZMK_BEHAVIOR(lt_del, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <120>;
+    quick-tap-ms = <150>;
+    require-prior-idle-ms = <80>;
+    bindings = <&mo>, <&kp>;
+    hold-trigger-on-release;
+)
+
 ZMK_COMBO(caps, &kp CAPSLOCK, LM2 RM2)
 
 ZMK_CONDITIONAL_LAYER(ext, NUM SYM, EXT) // FN + NUM --> SYS.
@@ -71,7 +80,7 @@ ZMK_LAYER(def,
 		&kp LGUI	  &kp Q           &kp W       &kp E        &kp R          &kp T           &kp Y       &kp U            &kp I         &kp O       &kp P           &kp DEL
 		&kp LCTRL	  &hml LGUI A     &hml LALT S &hml LSHFT D &hml LCTRL F   &kp G           &kp H       &hmr LCTRL J     &hmr RSHFT K  &hmr LALT L &hmr LGUI SEMI  &kp APOS
     &kp LSHFT   &kp Z           &kp X       &kp C        &kp V          &kp B           &kp N       &kp M            &kp COMMA     &kp DOT     &kp FSLH        &kp RSHFT
-      				  			                      &kp ESC      &lt_tab 1 TAB  &lt_shift LSHFT SPACE &kp RET     &lt_back 2 BSPC  &kp DEL
+      				  			                      &kp ESC      &lt_tab 1 TAB  &lt_shift LSHFT SPACE &kp RET     &lt_back 2 BSPC  &lt_del 3 DEL
 )
 
 ZMK_LAYER(num,  
@@ -89,8 +98,8 @@ ZMK_LAYER(sym,
 )
 
 ZMK_LAYER(ext,
-    &bootloader &trans &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &bootloader     &bootloader
-    &trans      &trans          &trans      &trans     &trans           &trans         &tog 1      &tog 2           &tog 3        &tog 4        &trans          &trans
-    &trans      &trans          &trans      &trans     &trans           &trans         &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5    &trans
-                                            &trans     &trans           &trans         &trans       &trans          &trans
+    &trans &trans          &trans      &trans     &trans           &trans        &tog 1       &tog 2          &tog 3        &tog 4        &trans &trans
+    &trans &trans          &trans      &trans     &trans           &trans         &bt BT_CLR   &out OUT_TOG    &trans        &trans        &bootloader &trans
+    &trans &trans          &trans      &trans     &trans           &trans         &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 5 &trans
+                                &trans     &trans           &trans         &trans       &trans          &trans
 )
