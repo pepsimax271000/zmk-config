@@ -5,8 +5,6 @@
  */
 
 #include "charybdis.dtsi"
-#include "pmw3610.dtsi"
-
 
 &kscan0 {
 	col-gpios
