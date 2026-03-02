@@ -1,6 +1,5 @@
 #include "charybdis-layouts.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "pmw3610.dtsi"
 
 / {
     chosen {
@@ -42,4 +41,16 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,9) RC(2,8) RC(2,7) RC(2,6) RC(2,5)
 		device = <&vtrackball>;
 		relay-channel = <111>;
 	};
+
+  trackball_listener {
+      compatible = "zmk,input-listener";
+      device = <&vtrackball>;
+      input-processors = <&zip_temp_layer 4 400>;
+  };
+
+  /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+      compatible = "zmk,input-processor-temp-layer";
+      #input-processor-cells = <2>;
+      require-prior-idle-ms = <500>;
+  };
 };
