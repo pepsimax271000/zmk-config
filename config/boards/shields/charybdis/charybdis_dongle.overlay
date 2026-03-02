@@ -2,10 +2,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "pmw3610.dtsi"
 
-&trackball_listener {
-  status = "okay";
-};
-
 / {
     chosen {
         zmk,kscan = &mock_kscan;
