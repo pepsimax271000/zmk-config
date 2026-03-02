@@ -3,15 +3,12 @@
  *
  * SPDX-License-Identifier: MIT
  */
- 
+
 #include "charybdis.dtsi"
 #include "pmw3610.dtsi"
-#include <zephyr/dt-bindings/input/input-event-codes.h>
-#include <dt-bindings/zmk/input_transform.h>
-
 
 &default_transform {
-    col-offset = <5>;
+	col-offset = <5>;
 };
 
 &kscan0 {
@@ -25,21 +22,9 @@
 };
 
 &spi0 {
-    status = "okay";
+	status = "okay";
 };
 
 &trackball {
-    status = "okay";
-};
-
-/ {
-	vtrackball: virtual_input_trackball {
-		compatible = "zmk,virtual-input";
-	};
-
-	input_relay_config_trackball {
-		compatible = "zmk,split-peripheral-input-relay";
-		device = <&trackball>;
-		relay-channel = <111>;
-	};
+	status = "okay";
 };

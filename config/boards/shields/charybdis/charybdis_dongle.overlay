@@ -31,21 +31,6 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,9) RC(2,8) RC(2,7) RC(2,6) RC(2,5)
 		rows = <0>;
 		events = <0>;
 	};
-
-	vtrackball: virtual_input_trackball {
-		compatible = "zmk,virtual-input";
-	};
-
-	input_relay_config_trackball {
-		compatible = "zmk,split-peripheral-input-relay";
-		device = <&vtrackball>;
-		relay-channel = <111>;
-	};
-
-	trackball_listener {
-		compatible = "zmk,input-listener";
-		device = <&vtrackball>;
-	};
 };
 
 &physical_layout0 {
