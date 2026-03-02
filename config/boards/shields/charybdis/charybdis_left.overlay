@@ -15,11 +15,3 @@
 		, <&pro_micro 7 GPIO_ACTIVE_HIGH>
 		;
 };
-
-&spi0 {
-    status = "disabled";
-};
-
-&trackball {
-	status = "disabled";
-};
