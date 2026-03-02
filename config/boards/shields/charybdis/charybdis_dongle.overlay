@@ -1,5 +1,6 @@
 #include "charybdis-layouts.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "pmw3610.dtsi"
 
 &trackball_split {
   status = "okay";
