@@ -14,7 +14,6 @@
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,physical-layout = &physical_layout0;
-        zmk,input-device = &trackball_split;
     };
 
     default_transform: keymap_transform_0 {
