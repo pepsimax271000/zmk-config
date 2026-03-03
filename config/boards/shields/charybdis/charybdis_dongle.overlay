@@ -5,7 +5,6 @@
  */
 
 #include "charybdis-layouts.dtsi"
-#include "charybdis.dtsi"
 #include "pmw3610.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
