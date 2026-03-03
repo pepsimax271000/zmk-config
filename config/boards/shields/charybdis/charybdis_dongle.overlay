@@ -1,11 +1,12 @@
 /*
  * Copyright (c) 2020 ZMK Contributors
- *
+
  * SPDX-License-Identifier: MIT
  */
 
 #include "charybdis-layouts.dtsi"
 #include "charybdis.dtsi"
+#include "pmw3610.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
