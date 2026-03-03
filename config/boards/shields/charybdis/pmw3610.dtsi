@@ -45,7 +45,7 @@
 		reg = <0>;
 		spi-max-frequency = <2000000>;
 		irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-		cpi = <2400>;
+		cpi = <1800>;
 		swap-xy;
 		invert-x;
 		invert-y;
@@ -70,10 +70,21 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackball_split>;
+        input-processors = <&zip_temp_layer 5 400>;
         scroller {
             layers = <6>;
             input-processors = <&zip_xy_to_scroll_mapper>;
-            process-next;
         };
+
+        snipe {
+            layers = <7>;
+            input-processors = <&zip_xy_scaler 1 3>;
+        };
+    };
+
+    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+      compatible = "zmk,input-processor-temp-layer";
+      #input-processor-cells = <2>;
+      require-prior-idle-ms = <500>;
     };
 };
