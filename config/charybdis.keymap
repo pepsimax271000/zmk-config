@@ -75,6 +75,15 @@ ZMK_BEHAVIOR(lt_scr, hold_tap,
     hold-trigger-on-release;
 )
 
+ZMK_BEHAVIOR(lt_sni, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <120>;
+    quick-tap-ms = <150>;
+    require-prior-idle-ms = <80>;
+    bindings = <&mo>, <&kp>;
+    hold-trigger-on-release;
+)
+
 ZMK_BEHAVIOR(lt_mb3, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <120>;
@@ -92,7 +101,7 @@ ZMK_CONDITIONAL_LAYER(ext, NUM SYM, EXT) // FN + NUM --> SYS.
 ZMK_LAYER(def,
 		&kp Q           &kp W       &kp E        &kp R          &kp T           &kp Y       &kp U            &kp I         &kp O       &kp P         
 		&hml LGUI A     &hml LALT S &hml LSHFT D &hml LCTRL F   &kp G           &kp H       &hmr LCTRL J     &hmr RSHFT K  &hmr LALT L &hmr LGUI SEMI
-    &kp Z           &kp X       &kp C        &kp V          &kp B           &kp N       &kp M            &kp COMMA     &kp DOT     &kp FSLH
+    &lt_sni 7 Z &kp X       &kp C        &kp V          &kp B           &kp N       &kp M            &kp COMMA     &kp DOT     &kp FSLH
       				  			          &lt_scr 6 ESC &lt_tab 1 TAB  &lt_shift LSHFT SPACE     &kp RET     &lt_back 2 BSPC
 )
 
