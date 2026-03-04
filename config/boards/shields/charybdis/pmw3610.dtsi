@@ -74,13 +74,13 @@
         scroller {
             layers = <6>;
             input-processors = <&zip_xy_to_scroll_mapper>;
-            process-next
+            process-next;
         };
 
         snipe {
             layers = <7>;
             input-processors = <&zip_xy_scaler 1 3>;
-            process-next
+            process-next;
         };
     };
 
