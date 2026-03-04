@@ -1,4 +1,5 @@
 #include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 #define INPUT_EV_KEY 0x01               /**< Key event */
 #define INPUT_EV_REL 0x02               /**< Relative coordinate event */
 #define INPUT_EV_ABS 0x03               /**< Absolute coordinate event */
@@ -73,7 +74,7 @@
         input-processors = <&zip_temp_layer 5 400>;
         scroller {
             layers = <6>;
-            input-processors = <&zip_xy_scaler 1 40>, <&zip_xy_to_scroll_mapper>;
+            input-processors = <&zip_xy_scaler 1 40>, <&zip_xy_to_scroll_mapper>, <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
         };
 
         snipe {
