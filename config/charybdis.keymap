@@ -15,10 +15,9 @@
 #define NUM 1
 #define SYM 2
 #define EXT 3
-#define GAME 4
-#define MOU 5
-#define SCR 6
-#define SNI 7
+#define MOU 4
+#define SCR 5
+#define SNI 6
 
 /* left-hand HRMs */
 ZMK_HOLD_TAP(hml,
@@ -135,7 +134,7 @@ ZMK_LAYER(mou,
 ZMK_LAYER(scr,
     &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
     &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
-    &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
+    &lt_sni 7 Z     &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
                                 &mkp MB1   &mkp MB3         &mkp MB2       &trans       &trans
 )
 
@@ -143,5 +142,5 @@ ZMK_LAYER(sni,
     &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
     &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
     &trans          &trans      &trans     &trans           &trans         &trans      &trans           &trans        &trans        &trans
-                                &mkp MB1   &mkp MB3         &mkp MB2       &trans       &trans
+                                &mkp MB1   &lt_mb3 6 MB3 &mkp MB2       &trans       &trans
 )
