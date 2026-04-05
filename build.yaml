@@ -19,7 +19,7 @@
 #
 ---
 include:
-  - board: nice_nano@2//zmk
+  - board: xiao_ble//zmk
     shield: corne_dongle prospector_adapter
 
   - board: nice_nano@2//zmk
