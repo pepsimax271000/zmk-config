@@ -12,12 +12,14 @@ manifest:
 
     - name: carrefinho
       url-base: https://github.com/carrefinho
+
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
 
     - name: zmk-helpers
+      path: modules/zmk/helpers
     - name: zmk-adaptive-key
       path: modules/zmk/adaptive-key
     - name: zmk-auto-layer
