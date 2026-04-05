@@ -18,3 +18,15 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: nice_nano//zmk
+    shield: corne_dongle prospector_adapter
+
+  - board: nice_nano//zmk
+    shield: corne_left nice_view_adapter nice_epaper
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: corne_left
+  - board: nice_nano//zmk
+    shield: corne_right nice_view_adapter nice_epaper
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: corne_right
