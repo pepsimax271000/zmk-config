@@ -13,6 +13,9 @@ manifest:
     - name: carrefinho
       url-base: https://github.com/carrefinho
 
+    - name: m165437
+      url-base: https://github.com/m165437
+
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -34,5 +37,10 @@ manifest:
     - name: prospector-zmk-module
       remote: carrefinho
       revision: feat/new-status-screens
+
+    - name: nice-view-gem
+      remote: m165437
+      revision: main
+
   self:
     path: config
