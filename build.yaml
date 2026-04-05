@@ -23,10 +23,10 @@ include:
     shield: corne_dongle prospector_adapter
 
   - board: nice_nano@2//zmk
-    shield: corne_left nice_view_adapter nice_epaper
+    shield: corne_left nice_view_adapter nice_view_gem
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: corne_left
   - board: nice_nano@2//zmk
-    shield: corne_right nice_view_adapter nice_epaper
+    shield: corne_right nice_view_adapter nice_view_gem
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: corne_right
