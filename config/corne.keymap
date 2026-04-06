@@ -69,7 +69,7 @@ ZMK_BEHAVIOR(lt_del, hold_tap,
 
 ZMK_COMBO(caps, &kp CAPSLOCK, LM2 RM2)
 
-ZMK_CONDITIONAL_LAYER(ext, 1 2, 3) // FN + NUM --> SYS.
+ZMK_CONDITIONAL_LAYER(ext, 1 2, 3)
 
 ZMK_LAYER(def,
 		&kp LGUI	  &kp Q           &kp W       &kp E        &kp R          &kp T           &kp Y       &kp U            &kp I         &kp O       &kp P           &kp DEL
@@ -85,7 +85,7 @@ ZMK_LAYER(num,
                                             &trans     &trans           &kp PIPE2      &kp TAB     &mo 3            &trans
 )
 
-ZMK_LAYER(sym,  
+ZMK_LAYER(sym,
     &kp LGUI	  &kp LBRC        &kp AMPS    &kp ASTRK  &kp LPAR         &kp RBRC       &kp F12     &kp F7           &kp F8        &kp F9      &kp PSCRN       &kp DEL
     &kp LCTRL	  &kp UNDERSCORE  &kp DLLR    &kp PRCNT  &kp CARET        &kp PLUS       &kp F11     &kp F4           &kp F5        &kp F6      &kp DEL         &kp APOS
     &kp LSHFT   &kp RPAR        &kp EXCL    &kp AT     &kp HASH         &kp PIPE       &kp F10     &kp F1           &kp F2        &kp F3      &trans          &kp RSHFT
