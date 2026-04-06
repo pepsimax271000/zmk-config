@@ -1,8 +1,4 @@
 manifest:
-  defaults:
-    remote: urob
-    revision: main
-    
   remotes:
     - name: urob
       url-base: https://github.com/urob
@@ -25,17 +21,29 @@ manifest:
       import: app/west.yml
 
     - name: zmk-adaptive-key
-      path: modules/zmk/adaptive-key
+      path: modules/zmk-adaptive-key
+      remote: urob
+      revision: main
     - name: zmk-auto-layer
-      path: modules/zmk/auto-layer
+      path: modules/zmk-auto-layer
+      remote: urob
+      revision: main
     - name: zmk-helpers
-      path: modules/zmk/helpers
+      path: modules/zmk-helpers
+      remote: urob
+      revision: main
     - name: zmk-leader-key
-      path: modules/zmk/leader-key
+      path: modules/zmk-leader-key
+      remote: urob
+      revision: main
     - name: zmk-tri-state
-      path: modules/zmk/tri-state
+      path: modules/zmk-tri-state
+      remote: urob
+      revision: main
     - name: zmk-unicode
-      path: modules/zmk/unicode
+      path: modules/zmk-unicode
+      remote: urob
+      revision: main
 
     - name: prospector-zmk-module
       remote: carrefinho
