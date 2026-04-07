@@ -43,6 +43,15 @@ ZMK_BEHAVIOR(lt_shift, hold_tap,
     hold-trigger-on-release;
 )
 
+ZMK_BEHAVIOR(lt_del, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <120>;
+    quick-tap-ms = <150>;
+    require-prior-idle-ms = <80>;
+    bindings = <&mo>, <&kp>;
+    hold-trigger-on-release;
+)
+
 ZMK_BEHAVIOR(lt_scr, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <120>;
