@@ -1,0 +1,7 @@
+#define BASE 0
+#define NUM 1
+#define SYM 2
+#define EXT 3
+#define MOU 4
+#define SCR 5
+#define SNI 6

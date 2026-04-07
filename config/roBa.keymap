@@ -5,10 +5,9 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "zmk-helpers/helper.h"
 #include "include/roBa.h"
+#include "include/combos.dtsi"
 #include "include/hold-tap.dtsi"
-
-ZMK_CONDITIONAL_LAYER(ext, 1 2, 3)
-ZMK_COMBO(caps, &kp CAPS, LM2 RM2, ALL, 45)
+#include "include/settings.dtsi"
 
 #define BASE 0
 #define NUM 1
