@@ -14,13 +14,7 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4 // right-hand keys
 #define THUMBS LH 2 LH1 LH0 RH0 RH1 // thumb keys
 
-#define BASE 0
-#define NUM 1
-#define SYM 2
-#define EXT 3
-#define MOU 4
-#define SCR 5
-#define SNI 6
+ZMK_CONDITIONAL_LAYER(ext, 1 2, 3)
 
 ZMK_LAYER(def,
 		&kp Q           &kp W       &kp E         &kp R          &kp T                     &kp Y       &kp U            &kp I         &kp O       &kp P         

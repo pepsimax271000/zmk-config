@@ -8,12 +8,7 @@
 #include "include/hold-tap.dtsi"
 #include "include/settings.dtsi"
 
-#define BASE 0
-#define NUM 1
-#define SYM 2
-#define EXT 3
-#define GAME 4
-
+ZMK_CONDITIONAL_LAYER(ext, 1 2, 3)
 
 ZMK_LAYER(def,
 		&kp LGUI	  &kp Q           &kp W       &kp E        &kp R          &kp T           &kp Y       &kp U            &kp I         &kp O       &kp P           &kp DEL
