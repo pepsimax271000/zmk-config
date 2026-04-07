@@ -52,7 +52,7 @@
 #define LH4 35
 #define LH5 34
 
-#define RH1 40 // right thumb keys
+#define RH0 40 // right thumb keys
 #define RH1 41
 #define RH2 42
 

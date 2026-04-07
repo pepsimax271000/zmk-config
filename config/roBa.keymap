@@ -7,15 +7,7 @@
 #include "include/roBa.h"
 #include "include/combo.dtsi"
 #include "include/hold-tap.dtsi"
-
-#define BASE 0
-#define NUM 1
-#define SYM 2
-#define EXT 3
-#define MOU 4
-#define SCR 5
-#define SNI 6
-
+#include "include/settings.dtsi"
 
 ZMK_LAYER(def,
 		&kp Q          &kp W       &kp E         &kp R          &kp T                                  &kp Y       &kp U            &kp I         &kp O       &kp P         
