@@ -4,10 +4,12 @@
 #include <dt-bindings/zmk/outputs.h>
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/42.h"
-#include "include/combo.dtsi"
 #include "include/hold-tap.dtsi"
 
 ZMK_CONDITIONAL_LAYER(ext, 1 2, 3)
+ZMK_COMBO(caps, &kp CAPS, LM2 RM2, ALL, 45)
+ZMK_COMBO(capsword, &kp CAPSWORD, LM1 RM1, ALL, 45)
+ZMK_COMBO(semi, &kp SEMI, RM3 RM1, ALL, 45)
 
 #define BASE 0
 #define NUM 1
