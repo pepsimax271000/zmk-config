@@ -1,5 +1,3 @@
-#include "settings.dtsi"
-
 ZMK_HOLD_TAP(hml,
     flavor = "balanced";
     tapping-term-ms = <250>;

@@ -1,4 +1,3 @@
-#include "settings.dtsi"
 #include "zmk-helpers/key-labels/42.h"
 
 ZMK_COMBO(caps, &kp CAPS, LM2 RM2, BASE NAV NUM, 45)
