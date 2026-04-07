@@ -422,7 +422,7 @@ rect.held, rect.combo.held {
 <path d="M364,84 l-205,0" class="combo"/>
 <path d="M364,84 l205,0" class="combo"/>
 <rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
-<text x="364" y="84" class="combo tap"><tspan style="font-size: 88%">CAPSLOCK</tspan></text>
+<text x="364" y="84" class="combo tap"><tspan style="font-size: 75%">CAPSLOCK</tspan></text>
 </g>
 </g>
 </g>
@@ -519,7 +519,7 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(700, 105)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">CAPSLOCK</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 75%">CAPSLOCK</tspan></text>
 </g>
 <g transform="translate(28, 161)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -613,7 +613,7 @@ rect.held, rect.combo.held {
 <path d="M364,84 l-205,0" class="combo"/>
 <path d="M364,84 l205,0" class="combo"/>
 <rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
-<text x="364" y="84" class="combo tap"><tspan style="font-size: 88%">CAPSLOCK</tspan></text>
+<text x="364" y="84" class="combo tap"><tspan style="font-size: 75%">CAPSLOCK</tspan></text>
 </g>
 </g>
 </g>
@@ -797,7 +797,7 @@ rect.held, rect.combo.held {
 <path d="M364,84 l-205,0" class="combo"/>
 <path d="M364,84 l205,0" class="combo"/>
 <rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
-<text x="364" y="84" class="combo tap"><tspan style="font-size: 88%">CAPSLOCK</tspan></text>
+<text x="364" y="84" class="combo tap"><tspan style="font-size: 75%">CAPSLOCK</tspan></text>
 </g>
 </g>
 </g>
@@ -991,7 +991,7 @@ rect.held, rect.combo.held {
 <path d="M364,84 l-205,0" class="combo"/>
 <path d="M364,84 l205,0" class="combo"/>
 <rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
-<text x="364" y="84" class="combo tap"><tspan style="font-size: 88%">CAPSLOCK</tspan></text>
+<text x="364" y="84" class="combo tap"><tspan style="font-size: 75%">CAPSLOCK</tspan></text>
 </g>
 </g>
 </g>
@@ -1184,7 +1184,7 @@ rect.held, rect.combo.held {
 <path d="M364,84 l-205,0" class="combo"/>
 <path d="M364,84 l205,0" class="combo"/>
 <rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
-<text x="364" y="84" class="combo tap"><tspan style="font-size: 88%">CAPSLOCK</tspan></text>
+<text x="364" y="84" class="combo tap"><tspan style="font-size: 75%">CAPSLOCK</tspan></text>
 </g>
 </g>
 </g>
@@ -1375,7 +1375,7 @@ rect.held, rect.combo.held {
 <path d="M364,84 l-205,0" class="combo"/>
 <path d="M364,84 l205,0" class="combo"/>
 <rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
-<text x="364" y="84" class="combo tap"><tspan style="font-size: 88%">CAPSLOCK</tspan></text>
+<text x="364" y="84" class="combo tap"><tspan style="font-size: 75%">CAPSLOCK</tspan></text>
 </g>
 </g>
 </g>
@@ -1563,7 +1563,7 @@ rect.held, rect.combo.held {
 <path d="M364,84 l-205,0" class="combo"/>
 <path d="M364,84 l205,0" class="combo"/>
 <rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
-<text x="364" y="84" class="combo tap"><tspan style="font-size: 88%">CAPSLOCK</tspan></text>
+<text x="364" y="84" class="combo tap"><tspan style="font-size: 75%">CAPSLOCK</tspan></text>
 </g>
 </g>
 </g>
