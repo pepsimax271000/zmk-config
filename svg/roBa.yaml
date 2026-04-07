@@ -311,7 +311,3 @@ layers:
 combos:
 - p: [12, 19]
   k: CAPS
-- p: [13, 18]
-  k: CAPSWORD
-- p: [20, 18]
-  k: ;
