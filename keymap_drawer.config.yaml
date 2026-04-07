@@ -13,6 +13,9 @@ draw_config:
   append_colon_to_layer_header: false
   dark_mode: auto
   footer_text: "pepsimax271000/zmk-config-ng"
+  # dark_mode: auto
+  n_columns: 1
+  # draw_key_sides: true # draw a square in the middle of the keys
   key_w: 60.0
   key_h: 56.0
   split_gap: 30.0
@@ -119,3 +122,16 @@ draw_config:
     .combo.sym_by_sym.hold > path[stroke="none"][fill="none"] {
       visibility: hidden;
     }
+
+  shrink_wide_legends: 6
+  glyph_tap_size: 18
+  glyph_hold_size: 15
+  glyph_shifted_size: 15
+  glyphs: {}
+  glyph_urls:
+    tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
+    tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
+    mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
+    material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
+  use_local_cache: true
