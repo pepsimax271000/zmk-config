@@ -176,7 +176,7 @@ layers:
   - {t: ▽, type: trans}
   - Left Click
   - Left Click
-  - {t: MB3, h: scr}
+  - Middle Scroll
   - Right Click
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -248,7 +248,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Left Click
-  - {t: MB3, h: scr}
+  - Middle Scroll
   - Right Click
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
