@@ -42,7 +42,7 @@ layers:
   - {t: SPACE, h: LSHFT}
   - RET
   - {t: BSPC, h: sym}
-  - {t: DEL, h: ext}
+  - ext
   num:
   - LGUI
   - '['
@@ -177,5 +177,5 @@ combos:
   k: CAPS
 - p: [16, 19]
   k: Caps Word
-- p: [7, 8]
+- p: [19, 20]
   k: ;
