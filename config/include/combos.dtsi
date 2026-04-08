@@ -6,5 +6,3 @@ ZMK_CONDITIONAL_LAYER(ext, 1 2, 3)
 ZMK_COMBO(caps, &kp CAPS, LM2 RM2, BASE, 45)
 
 ZMK_COMBO(capsword, &caps_word, LM1 RM1, BASE, 45)
-
-ZMK_COMBO(semicolon, &kp SEMICOLON, RT1 RT2, BASE, 45)
