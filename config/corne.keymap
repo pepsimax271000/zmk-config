@@ -8,12 +8,7 @@
 #include "include/hold-tap.dtsi"
 #include "include/settings.dtsi"
 
-#define BASE 0
-#define NUM 1
-#define SYM 2
-#define EXT 3
-
-ZMK_LAYER(def,
+ZMK_LAYER(base,
 		&kp LGUI	  &kp Q           &kp W       &kp E        &kp R          &kp T           &kp Y       &kp U            &kp I         &kp O       &kp P           &kp DEL
 		&kp LCTRL	  &hml LGUI A     &hml LALT S &hml LSHFT D &hml LCTRL F   &kp G           &kp H       &hmr LCTRL J     &hmr RSHFT K  &hmr LALT L &hmr LGUI SEMI  &kp APOS
     &kp LSHFT   &kp Z           &kp X       &kp C        &kp V          &kp B           &kp N       &kp M            &kp COMMA     &kp DOT     &kp FSLH        &kp RSHFT
