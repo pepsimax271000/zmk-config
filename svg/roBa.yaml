@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: roBa}
 layers:
-  def:
+  base:
   - Q
   - W
   - E
@@ -311,3 +311,7 @@ layers:
 combos:
 - p: [12, 19]
   k: CAPS
+- p: [13, 18]
+  k: Caps Word
+- p: [6, 7]
+  k: ;

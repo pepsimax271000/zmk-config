@@ -222,8 +222,8 @@ text.label, text.footer, text.trans {
   visibility: hidden;
 }
 </style>
-<g transform="translate(40, 0)" class="layer-def">
-<text x="0" y="28" class="label" id="def">def:</text>
+<g transform="translate(40, 0)" class="layer-base">
+<text x="0" y="28" class="label" id="base">base:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -388,6 +388,18 @@ text.label, text.footer, text.trans {
 <rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
 <text x="364" y="84" class="combo tap">CAPS</text>
 </g>
+<g class="combo combopos-1">
+<path d="M364,91 l-149,0" class="combo"/>
+<path d="M364,91 l149,0" class="combo"/>
+<rect rx="6" ry="6" x="350" y="78" width="28" height="26" class="combo"/>
+<text x="364" y="91" class="combo tap">
+<tspan x="364" dy="-0.6em">Caps</tspan><tspan x="364" dy="1.2em">Word</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="546" y="18" width="28" height="26" class="combo"/>
+<text x="560" y="31" class="combo tap">;</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 327)" class="layer-num">
@@ -547,6 +559,18 @@ text.label, text.footer, text.trans {
 <rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
 <text x="364" y="84" class="combo tap">CAPS</text>
 </g>
+<g class="combo combopos-1">
+<path d="M364,91 l-149,0" class="combo"/>
+<path d="M364,91 l149,0" class="combo"/>
+<rect rx="6" ry="6" x="350" y="78" width="28" height="26" class="combo"/>
+<text x="364" y="91" class="combo tap">
+<tspan x="364" dy="-0.6em">Caps</tspan><tspan x="364" dy="1.2em">Word</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="546" y="18" width="28" height="26" class="combo"/>
+<text x="560" y="31" class="combo tap">;</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 654)" class="layer-sym">
@@ -698,6 +722,18 @@ text.label, text.footer, text.trans {
 <path d="M364,84 l205,0" class="combo"/>
 <rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
 <text x="364" y="84" class="combo tap">CAPS</text>
+</g>
+<g class="combo combopos-1">
+<path d="M364,91 l-149,0" class="combo"/>
+<path d="M364,91 l149,0" class="combo"/>
+<rect rx="6" ry="6" x="350" y="78" width="28" height="26" class="combo"/>
+<text x="364" y="91" class="combo tap">
+<tspan x="364" dy="-0.6em">Caps</tspan><tspan x="364" dy="1.2em">Word</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="546" y="18" width="28" height="26" class="combo"/>
+<text x="560" y="31" class="combo tap">;</text>
 </g>
 </g>
 </g>
@@ -861,6 +897,18 @@ text.label, text.footer, text.trans {
 <rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
 <text x="364" y="84" class="combo tap">CAPS</text>
 </g>
+<g class="combo combopos-1">
+<path d="M364,91 l-149,0" class="combo"/>
+<path d="M364,91 l149,0" class="combo"/>
+<rect rx="6" ry="6" x="350" y="78" width="28" height="26" class="combo"/>
+<text x="364" y="91" class="combo tap">
+<tspan x="364" dy="-0.6em">Caps</tspan><tspan x="364" dy="1.2em">Word</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="546" y="18" width="28" height="26" class="combo"/>
+<text x="560" y="31" class="combo tap">;</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1309)" class="layer-mou">
@@ -1022,6 +1070,18 @@ text.label, text.footer, text.trans {
 <rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
 <text x="364" y="84" class="combo tap">CAPS</text>
 </g>
+<g class="combo combopos-1">
+<path d="M364,91 l-149,0" class="combo"/>
+<path d="M364,91 l149,0" class="combo"/>
+<rect rx="6" ry="6" x="350" y="78" width="28" height="26" class="combo"/>
+<text x="364" y="91" class="combo tap">
+<tspan x="364" dy="-0.6em">Caps</tspan><tspan x="364" dy="1.2em">Word</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="546" y="18" width="28" height="26" class="combo"/>
+<text x="560" y="31" class="combo tap">;</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1636)" class="layer-scr">
@@ -1181,6 +1241,18 @@ text.label, text.footer, text.trans {
 <rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
 <text x="364" y="84" class="combo tap">CAPS</text>
 </g>
+<g class="combo combopos-1">
+<path d="M364,91 l-149,0" class="combo"/>
+<path d="M364,91 l149,0" class="combo"/>
+<rect rx="6" ry="6" x="350" y="78" width="28" height="26" class="combo"/>
+<text x="364" y="91" class="combo tap">
+<tspan x="364" dy="-0.6em">Caps</tspan><tspan x="364" dy="1.2em">Word</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="546" y="18" width="28" height="26" class="combo"/>
+<text x="560" y="31" class="combo tap">;</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1963)" class="layer-sni">
@@ -1336,6 +1408,18 @@ text.label, text.footer, text.trans {
 <path d="M364,84 l205,0" class="combo"/>
 <rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
 <text x="364" y="84" class="combo tap">CAPS</text>
+</g>
+<g class="combo combopos-1">
+<path d="M364,91 l-149,0" class="combo"/>
+<path d="M364,91 l149,0" class="combo"/>
+<rect rx="6" ry="6" x="350" y="78" width="28" height="26" class="combo"/>
+<text x="364" y="91" class="combo tap">
+<tspan x="364" dy="-0.6em">Caps</tspan><tspan x="364" dy="1.2em">Word</tspan>
+</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="546" y="18" width="28" height="26" class="combo"/>
+<text x="560" y="31" class="combo tap">;</text>
 </g>
 </g>
 </g>

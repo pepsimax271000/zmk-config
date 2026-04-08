@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  def:
+  base:
   - LGUI
   - Q
   - W
@@ -175,3 +175,7 @@ layers:
 combos:
 - p: [15, 20]
   k: CAPS
+- p: [16, 19]
+  k: Caps Word
+- p: [7, 8]
+  k: ;

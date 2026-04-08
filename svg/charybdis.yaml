@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  def:
+  base:
   - Q
   - W
   - E
@@ -255,3 +255,7 @@ layers:
 combos:
 - p: [12, 17]
   k: CAPS
+- p: [13, 16]
+  k: Caps Word
+- p: [6, 7]
+  k: ;
