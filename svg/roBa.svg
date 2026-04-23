@@ -429,8 +429,8 @@ text.label, text.footer, text.trans {
 </text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="546" y="18" width="28" height="26" class="combo"/>
-<text x="560" y="31" class="combo tap">;</text>
+<rect rx="6" ry="6" x="546" y="74" width="28" height="26" class="combo"/>
+<text x="560" y="87" class="combo tap">;</text>
 </g>
 </g>
 </g>
@@ -632,8 +632,8 @@ text.label, text.footer, text.trans {
 </text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="546" y="18" width="28" height="26" class="combo"/>
-<text x="560" y="31" class="combo tap">;</text>
+<rect rx="6" ry="6" x="546" y="74" width="28" height="26" class="combo"/>
+<text x="560" y="87" class="combo tap">;</text>
 </g>
 </g>
 </g>
@@ -828,8 +828,8 @@ text.label, text.footer, text.trans {
 </text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="546" y="18" width="28" height="26" class="combo"/>
-<text x="560" y="31" class="combo tap">;</text>
+<rect rx="6" ry="6" x="546" y="74" width="28" height="26" class="combo"/>
+<text x="560" y="87" class="combo tap">;</text>
 </g>
 </g>
 </g>
@@ -1034,8 +1034,8 @@ text.label, text.footer, text.trans {
 </text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="546" y="18" width="28" height="26" class="combo"/>
-<text x="560" y="31" class="combo tap">;</text>
+<rect rx="6" ry="6" x="546" y="74" width="28" height="26" class="combo"/>
+<text x="560" y="87" class="combo tap">;</text>
 </g>
 </g>
 </g>
@@ -1239,8 +1239,8 @@ text.label, text.footer, text.trans {
 </text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="546" y="18" width="28" height="26" class="combo"/>
-<text x="560" y="31" class="combo tap">;</text>
+<rect rx="6" ry="6" x="546" y="74" width="28" height="26" class="combo"/>
+<text x="560" y="87" class="combo tap">;</text>
 </g>
 </g>
 </g>
@@ -1442,8 +1442,8 @@ text.label, text.footer, text.trans {
 </text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="546" y="18" width="28" height="26" class="combo"/>
-<text x="560" y="31" class="combo tap">;</text>
+<rect rx="6" ry="6" x="546" y="74" width="28" height="26" class="combo"/>
+<text x="560" y="87" class="combo tap">;</text>
 </g>
 </g>
 </g>
@@ -1642,8 +1642,8 @@ text.label, text.footer, text.trans {
 </text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="546" y="18" width="28" height="26" class="combo"/>
-<text x="560" y="31" class="combo tap">;</text>
+<rect rx="6" ry="6" x="546" y="74" width="28" height="26" class="combo"/>
+<text x="560" y="87" class="combo tap">;</text>
 </g>
 </g>
 </g>

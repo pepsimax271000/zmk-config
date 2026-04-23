@@ -257,5 +257,5 @@ combos:
   k: CAPS
 - p: [13, 16]
   k: Caps Word
-- p: [6, 7]
+- p: [16, 17]
   k: ;

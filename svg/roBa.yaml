@@ -313,5 +313,5 @@ combos:
   k: CAPS
 - p: [13, 18]
   k: Caps Word
-- p: [6, 7]
+- p: [18, 19]
   k: ;
